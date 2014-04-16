@@ -21,7 +21,7 @@
 		9B11821C18FC50C500D17137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B11821A18FC50C500D17137 /* InfoPlist.strings */; };
 		9B11821E18FC50C500D17137 /* TransitionTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11821D18FC50C500D17137 /* TransitionTutorialTests.m */; };
 		9B11823218FC53DC00D17137 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11823118FC53DC00D17137 /* TTViewController.m */; };
-		9B11823618FC5A5B00D17137 /* TTPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11823518FC5A5B00D17137 /* TTPushAnimator.m */; };
+		9B11823618FC5A5B00D17137 /* TTFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B11823518FC5A5B00D17137 /* TTFadeAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		9B11821D18FC50C500D17137 /* TransitionTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionTutorialTests.m; sourceTree = "<group>"; };
 		9B11823018FC53DC00D17137 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
 		9B11823118FC53DC00D17137 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
-		9B11823418FC5A5B00D17137 /* TTPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPushAnimator.h; sourceTree = "<group>"; };
-		9B11823518FC5A5B00D17137 /* TTPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPushAnimator.m; sourceTree = "<group>"; };
+		9B11823418FC5A5B00D17137 /* TTFadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFadeAnimator.h; sourceTree = "<group>"; };
+		9B11823518FC5A5B00D17137 /* TTFadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFadeAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +167,8 @@
 		9B11823318FC550500D17137 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				9B11823418FC5A5B00D17137 /* TTPushAnimator.h */,
-				9B11823518FC5A5B00D17137 /* TTPushAnimator.m */,
+				9B11823418FC5A5B00D17137 /* TTFadeAnimator.h */,
+				9B11823518FC5A5B00D17137 /* TTFadeAnimator.m */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			files = (
 				9B11823218FC53DC00D17137 /* TTViewController.m in Sources */,
 				9B11820018FC50C500D17137 /* TTAppDelegate.m in Sources */,
-				9B11823618FC5A5B00D17137 /* TTPushAnimator.m in Sources */,
+				9B11823618FC5A5B00D17137 /* TTFadeAnimator.m in Sources */,
 				9B1181FC18FC50C500D17137 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

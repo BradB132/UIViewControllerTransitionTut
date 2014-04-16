@@ -7,7 +7,7 @@
 //
 
 #import "TTViewController.h"
-#import "TTPushAnimator.h"
+#import "TTFadeAnimator.h"
 
 @interface TTViewController ()
 
@@ -29,15 +29,7 @@
                                                 fromViewController:(UIViewController *)fromVC
                                                   toViewController:(UIViewController *)toVC
 {
-	switch(operation)
-	{
-		case UINavigationControllerOperationPush:
-			return [[TTPushAnimator alloc] init];
-		case UINavigationControllerOperationPop:
-			return [[TTPushAnimator alloc] init];
-		default:
-			return nil;
-	}
+	return [[TTFadeAnimator alloc] init];
 }
 
 @end

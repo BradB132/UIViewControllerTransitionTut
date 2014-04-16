@@ -1,5 +1,5 @@
 //
-//  TTPushAnimator.h
+//  TTFadeAnimator.h
 //  TransitionTutorial
 //
 //  Created by Brad Bambara on 4/14/14.
@@ -8,6 +8,6 @@
 
 @import Foundation;
 
-@interface TTPushAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface TTFadeAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end
