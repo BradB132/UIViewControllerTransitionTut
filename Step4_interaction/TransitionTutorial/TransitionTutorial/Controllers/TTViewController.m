@@ -27,12 +27,9 @@
 	self.pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
 	[self.navigationController.view addGestureRecognizer:_pinch];
 	
-	self.navigationController.delegate = self;
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
 	self.transition = [[UIPercentDrivenInteractiveTransition alloc] init];
+	
+	self.navigationController.delegate = self;
 }
 
 -(void)dealloc
@@ -61,26 +58,18 @@
 			
 			break;
 		case UIGestureRecognizerStateChanged:
-		{
-			float percent = [self percentForPinch:pinch];
-			[_transition updateInteractiveTransition:(percent < 0.0f) ? 0.0f : percent];
-		}
+			
+			[_transition updateInteractiveTransition:[self percentForPinch:pinch]];
+			
 			break;
 		case UIGestureRecognizerStateCancelled:
 		case UIGestureRecognizerStateEnded:
 			
 			//find some natural-feeling way to detect if the user wants to cancel the transition
 			if([self percentForPinch:pinch] < 0.25f)
-			{
 				[_transition cancelInteractiveTransition];
-			}
 			else
-			{
 				[_transition finishInteractiveTransition];
-			
-				//nulling out the transition object prevents the same object from being used in subsequent transitions
-				_transition = nil;
-			}
 			
 			break;
 		default:
@@ -93,7 +82,9 @@
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
 {
-	return _transition;
+	if([animationController isKindOfClass:[TTPushAnimator class]])
+		return _transition;
+	return nil;
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
