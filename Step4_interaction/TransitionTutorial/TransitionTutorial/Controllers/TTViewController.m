@@ -52,7 +52,7 @@
 			if(pinch.velocity < 0.0f)
 				return;
 			
-			//trigger push unless we're pushing from this controller
+			//don't trigger push unless we're pushing from this controller
 			if(self.navigationController.topViewController == self)
 				[self performSegueWithIdentifier:@"push" sender:pinch];
 			
