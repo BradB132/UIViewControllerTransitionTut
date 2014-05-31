@@ -31,11 +31,6 @@
 	self.navigationController.delegate = self;
 }
 
--(void)dealloc
-{
-	[self.navigationController.view removeGestureRecognizer:_pinch];
-}
-
 -(float)percentForPinch:(UIPinchGestureRecognizer*)pinch
 {
 	return (pinch.scale - 1.0f)/2.0f;//denominator is just a fudge factor to get the 'feel' right
