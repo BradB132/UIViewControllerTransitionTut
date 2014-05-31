@@ -25,7 +25,7 @@
 	
 	//add gesture recognizer to navigation controller instead of any views in our own view heirarchy so that gesture won't cancel when we start the transition
 	self.pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
-	[self.navigationController.view addGestureRecognizer:_pinch];
+	[self.view addGestureRecognizer:_pinch];
 	
 	self.transition = [[UIPercentDrivenInteractiveTransition alloc] init];
 	

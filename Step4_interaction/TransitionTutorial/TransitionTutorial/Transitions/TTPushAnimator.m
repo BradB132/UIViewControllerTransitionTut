@@ -37,7 +37,7 @@
 	snapshotBottom.frame = bottomFrame;
 	
 	//remove the original view from the container
-	[fromController.view removeFromSuperview];
+	fromController.view.hidden = YES;
 	
 	//add our destination view
 	[container addSubview:toController.view];
@@ -69,6 +69,7 @@
 		//don't forget to clean up
 		[snapshotTop removeFromSuperview];
 		[snapshotBottom removeFromSuperview];
+		fromController.view.hidden = NO;
 		
 		//put the original stuff back in place if the user cancelled
 		if(transitionContext.transitionWasCancelled)
