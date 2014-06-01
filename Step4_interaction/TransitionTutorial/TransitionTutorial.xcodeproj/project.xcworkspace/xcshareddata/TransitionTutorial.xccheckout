@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55AA1D81-5A81-4D12-8DDB-4A45ED1D2CDB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TransitionTutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3F283F47-8BC3-4E46-AA2D-3751FCB807EF</key>
+		<string>https://github.com/BradB132/UIViewControllerTransitionTut.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Step4_interaction/TransitionTutorial/TransitionTutorial.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3F283F47-8BC3-4E46-AA2D-3751FCB807EF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BradB132/UIViewControllerTransitionTut.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3F283F47-8BC3-4E46-AA2D-3751FCB807EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3F283F47-8BC3-4E46-AA2D-3751FCB807EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIViewControllerTransitionTut</string>
+		</dict>
+	</array>
+</dict>
+</plist>
