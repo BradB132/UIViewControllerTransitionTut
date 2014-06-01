@@ -44,7 +44,7 @@
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
 {
 	if([animationController isKindOfClass:[TTBaseAnimator class]])
-		return ((TTBaseAnimator*)animationController).percentDrivenTransition;
+		return ((TTBaseAnimator*)animationController).interactiveTransitioning;
 	return nil;
 }
 
@@ -58,7 +58,7 @@
 		TTPopAnimator* anim = [[TTPopAnimator alloc] init];
 		
 		BOOL transitionCausedByGesture = YES;
-		anim.percentDrivenTransition = transitionCausedByGesture ? _transition : nil;
+		anim.interactiveTransitioning = transitionCausedByGesture ? _transition : nil;
 		
 		return anim;
 	}

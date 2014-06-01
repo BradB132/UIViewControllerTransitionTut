@@ -11,7 +11,7 @@
 @interface TTBaseAnimator : NSObject
 
 @property (nonatomic) NSTimeInterval duration;
-@property (nonatomic, strong) UIPercentDrivenInteractiveTransition* percentDrivenTransition;
+@property (nonatomic, strong) id<UIViewControllerInteractiveTransitioning> interactiveTransitioning;
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext;
 
