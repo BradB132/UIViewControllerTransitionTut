@@ -57,6 +57,7 @@
 	{
 		TTPopAnimator* anim = [[TTPopAnimator alloc] init];
 		
+		//we can determine here if this transition should be interactive
 		BOOL transitionCausedByGesture = YES;
 		anim.interactiveTransitioning = transitionCausedByGesture ? _transition : nil;
 		
