@@ -61,7 +61,7 @@
 		
 		//we can determine here if this transition should be interactive
 		BOOL transitionCausedByGesture = YES;
-		anim.percentDrivenTransition = transitionCausedByGesture ? _transition : nil;
+		anim.interactiveTransitioning = transitionCausedByGesture ? _transition : nil;
 		
 		return anim;
 	}
