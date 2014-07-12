@@ -46,9 +46,7 @@
 			if(pinch.velocity < 0.0f)
 				return;
 			
-			//don't trigger push unless we're pushing from this controller
-			if(self.navigationController.topViewController == self)
-				[self performSegueWithIdentifier:@"push" sender:pinch];
+			[self performSegueWithIdentifier:@"push" sender:pinch];
 			
 			break;
 		case UIGestureRecognizerStateChanged:
